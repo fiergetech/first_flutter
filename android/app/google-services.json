@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "376714834926",
+    "project_id": "smarthome-flutter-c8181",
+    "storage_bucket": "smarthome-flutter-c8181.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376714834926:android:646ca13ed1dce0664d14ff",
+        "android_client_info": {
+          "package_name": "com.first_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376714834926-0pjad8n190gqcf3c5lks258jto6j83qh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPMrfGrb8TwPcGaonaPJlyZvRobBMuyZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376714834926-0pjad8n190gqcf3c5lks258jto6j83qh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
