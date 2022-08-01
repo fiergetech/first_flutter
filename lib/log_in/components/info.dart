@@ -41,6 +41,27 @@ class Credentials extends StatelessWidget {
             obscureText: true,
             textEditingController: _passTextController,
           ),
+          const SizedBox(
+            height: 15.0,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              GestureDetector(
+                onTap: () {
+                  // forget password
+                },
+                child: Text(
+                  "Forget Password?",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white,
+                    fontSize: 17,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );

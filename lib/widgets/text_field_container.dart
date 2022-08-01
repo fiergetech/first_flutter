@@ -17,8 +17,8 @@ class TextFieldContainer extends StatelessWidget {
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
               colors: [
-                Colors.redAccent,
-                Colors.red,
+                Colors.white,
+                Colors.orangeAccent,
               ]),
           borderRadius: BorderRadius.circular(12),
           boxShadow: const [

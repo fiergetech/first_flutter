@@ -21,18 +21,18 @@ class InputField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFieldContainer(
       child: TextField(
-        cursorColor: Colors.white,
+        cursorColor: Colors.black,
         obscureText: obscureText,
         controller: textEditingController,
         decoration: InputDecoration(
           hintText: hintText,
           helperStyle: const TextStyle(
-            color: Colors.white,
+            color: Colors.black,
             fontSize: 18.0,
           ),
           prefixIcon: Icon(
             icon,
-            color: Colors.white,
+            color: Colors.black,
             size: 20,
           ),
           border: InputBorder.none,
