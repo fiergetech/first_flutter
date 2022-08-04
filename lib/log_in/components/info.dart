@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:first_flutter/widgets/button_login.dart';
 import 'package:first_flutter/widgets/input_field.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class Credentials extends StatelessWidget {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -12,7 +14,7 @@ class Credentials extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(50.0),
+      padding: const EdgeInsets.all(50.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -51,7 +53,7 @@ class Credentials extends StatelessWidget {
                 onTap: () {
                   // forget password
                 },
-                child: Text(
+                child: const Text(
                   "Forget Password?",
                   style: TextStyle(
                     fontWeight: FontWeight.w400,
@@ -62,6 +64,24 @@ class Credentials extends StatelessWidget {
               ),
             ],
           ),
+          SizedBox(
+            height: 60.0,
+            child: ButtonLogin(
+                text: "Login",
+                color1: Colors.red,
+                color2: Colors.redAccent,
+                press: () async {
+                  try {
+                    await _auth.signInWithEmailAndPassword(
+                      email: _emailTextController.text.trim().toLowerCase(),
+                      password: _passTextController.text.trim(),
+                    );
+                    //Homescreen
+                  } catch (error) {
+                    Fluttertoast.showToast(msg: error.toString());
+                  }
+                }),
+          )
         ],
       ),
     );
